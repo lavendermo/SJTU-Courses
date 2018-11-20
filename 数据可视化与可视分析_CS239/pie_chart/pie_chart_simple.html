@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>psd3 - Simple Multi-level Pie Chart</title>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src=".https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/3.5.6/d3.min.js"></script>
+
+    <script type="text/javascript" src="js/psd3.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/psd3.css" />
+</head>
+
+<body style="margin: 15px;">
+
+    <div class="container">
+        <div id="chartContainer" class="well"></div>
+    </div>
+
+
+    <script type="text/javascript">
+        var config = {
+            containerId: "chartContainer",      /************改成div的id名称******************/
+            data: [{
+                value: 315079,
+                label: "广告推销类",
+                inner: [{
+                    value: 166613,
+                    label: "金融"
+                }, {
+                    value: 42118,
+                    label: "销售"
+                }, {
+                    value: 106348,
+                    label: "房地产"
+                }]
+            }, {
+                value: 2315960,
+                label: "严重违法类",
+                inner: [{
+                    value: 341124,
+                    label: "色情"
+                }, {
+                    value: 145,
+                    label: "赌博"
+                }, {
+                    value: 1926183,
+                    label: "发票"
+                }, {
+                    value: 48508,
+                    label: "办证刻章"
+                }]
+            }, {
+                value: 570466,
+                label: "诈骗短信类",
+                inner: [{
+                    value: 559313,
+                    label: "电商网站"
+                }, {
+                    value: 11153,
+                    label: "钓鱼诈骗"
+                }]
+            }, {
+                value: 157447,
+                label: "信息骚扰类",
+                inner: [{
+                    value: 157447,
+                    label: "信息骚扰"
+                }]
+            }],
+        };
+        var samplePie = new psd3.Pie(config);
+    </script>
+
+</body>
+
+</html>
