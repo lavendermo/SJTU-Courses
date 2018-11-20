@@ -1,0 +1,4 @@
+根据经纬度获取区域名，用了百度地图API
+Java写的
+get_city_name:Java项目文件
+data:原始数据以及处理后的数据
